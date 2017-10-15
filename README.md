@@ -19,7 +19,7 @@ Custom circle ProgressBar
     	
 2.使用
 
-    <com.sky.library.BubbleProgressBar
+    <com.sky.library.CircleProgressBar
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"/>
           
