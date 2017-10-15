@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
-import com.sky.library.BubbleProgressBar;
+import com.sky.library.CircleProgressBar;
 import com.sky.example.test.R;
 
 import java.util.ArrayList;
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        final BubbleProgressBar bar = (BubbleProgressBar) findViewById(R.id.bar);
+        final CircleProgressBar bar = (CircleProgressBar) findViewById(R.id.bar);
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         List<String> lists = new ArrayList<>();
         lists.add("原始样式");

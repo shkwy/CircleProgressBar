@@ -1,6 +1,6 @@
 <resources>
 
-    <declare-styleable name="BubbleProgressBar">
+    <declare-styleable name="CircleProgressBar">
         <attr name="bollColor" format="integer"/>
         <attr name="needBackground" format="boolean"/>
         <attr name="needDifferentColor" format="boolean"/>

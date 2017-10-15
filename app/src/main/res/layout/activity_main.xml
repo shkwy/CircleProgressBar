@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context="com.sky.example.test.com.example.sky.MainActivity">
 
-    <com.sky.library.BubbleProgressBar
+    <com.sky.library.CircleProgressBar
         android:id="@+id/bar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

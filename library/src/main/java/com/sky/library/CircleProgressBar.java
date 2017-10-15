@@ -18,7 +18,7 @@ import android.view.View;
  * Created by tank on 2017/10/14.
  */
 
-public class BubbleProgressBar extends View {
+public class CircleProgressBar extends View {
 
     private int width, height;
     private int x, y; // 圆的坐标
@@ -35,29 +35,29 @@ public class BubbleProgressBar extends View {
     private String[] colors;
     private static boolean IS_PLAYING = false;
 
-    public BubbleProgressBar(Context context) {
+    public CircleProgressBar(Context context) {
         this(context, null);
     }
 
-    public BubbleProgressBar(Context context, @Nullable AttributeSet attrs) {
+    public CircleProgressBar(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         initTypedArray(context, attrs);
         init();
     }
 
     private void initTypedArray(Context context, AttributeSet attrs) {
-        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.BubbleProgressBar);
-        bollColor = typedArray.getInteger(R.styleable.BubbleProgressBar_bollColor, Color.parseColor("#00FFFF"));
-        needBackground = typedArray.getBoolean(R.styleable.BubbleProgressBar_needBackground, false);
-        needDifferentColor = typedArray.getBoolean(R.styleable.BubbleProgressBar_needDifferentColor, false);
-        color_0 = typedArray.getString(R.styleable.BubbleProgressBar_color_0);
-        color_1 = typedArray.getString(R.styleable.BubbleProgressBar_color_1);
-        color_2 = typedArray.getString(R.styleable.BubbleProgressBar_color_2);
-        color_3 = typedArray.getString(R.styleable.BubbleProgressBar_color_3);
-        color_4 = typedArray.getString(R.styleable.BubbleProgressBar_color_4);
-        color_5 = typedArray.getString(R.styleable.BubbleProgressBar_color_5);
-        color_6 = typedArray.getString(R.styleable.BubbleProgressBar_color_6);
-        color_7 = typedArray.getString(R.styleable.BubbleProgressBar_color_7);
+        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.CircleProgressBar);
+        bollColor = typedArray.getInteger(R.styleable.CircleProgressBar_bollColor, Color.parseColor("#00FFFF"));
+        needBackground = typedArray.getBoolean(R.styleable.CircleProgressBar_needBackground, false);
+        needDifferentColor = typedArray.getBoolean(R.styleable.CircleProgressBar_needDifferentColor, false);
+        color_0 = typedArray.getString(R.styleable.CircleProgressBar_color_0);
+        color_1 = typedArray.getString(R.styleable.CircleProgressBar_color_1);
+        color_2 = typedArray.getString(R.styleable.CircleProgressBar_color_2);
+        color_3 = typedArray.getString(R.styleable.CircleProgressBar_color_3);
+        color_4 = typedArray.getString(R.styleable.CircleProgressBar_color_4);
+        color_5 = typedArray.getString(R.styleable.CircleProgressBar_color_5);
+        color_6 = typedArray.getString(R.styleable.CircleProgressBar_color_6);
+        color_7 = typedArray.getString(R.styleable.CircleProgressBar_color_7);
         typedArray.recycle();
     }
 
