@@ -47,7 +47,7 @@ public class BubbleProgressBar extends View {
 
     private void initTypedArray(Context context, AttributeSet attrs) {
         TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.BubbleProgressBar);
-        bollColor = typedArray.getInteger(R.styleable.BubbleProgressBar_bollColor, Color.BLUE);
+        bollColor = typedArray.getInteger(R.styleable.BubbleProgressBar_bollColor, Color.parseColor("#00FFFF"));
         needBackground = typedArray.getBoolean(R.styleable.BubbleProgressBar_needBackground, false);
         needDifferentColor = typedArray.getBoolean(R.styleable.BubbleProgressBar_needDifferentColor, false);
         color_0 = typedArray.getString(R.styleable.BubbleProgressBar_color_0);
@@ -157,6 +157,35 @@ public class BubbleProgressBar extends View {
             x = (int) (centerX + radius * Math.cos(angles[i] * 3.14 / 180));
             y = (int) (centerY + radius * Math.sin(angles[i] * 3.14 / 180));
             canvas.drawCircle(x, y, circleRadius, circlePaint);
+        }
+    }
+
+    public void setBollColor(int color) {
+        bollColor = color;
+    }
+
+    public void needBackground(boolean background) {
+        needBackground = background;
+    }
+
+    public void needDifferentColor(boolean differentColor) {
+        needDifferentColor = differentColor;
+    }
+
+    public void setDifferentColors(String... c) {
+        if (c.length == 0 || c.length > colors.length) {
+            return;
+        }
+        for (int i = 0; i < colors.length; i++) {
+            if (c.length == colors.length) {
+                colors = c;
+            } else {
+                if (c.length - 1 < i) {
+                    colors[i] = "";
+                } else {
+                    colors[i] = c[i];
+                }
+            }
         }
     }
 
