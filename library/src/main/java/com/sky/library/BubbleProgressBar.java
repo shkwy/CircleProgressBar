@@ -1,4 +1,4 @@
-package com.example.sky.test;
+package com.sky.library;
 
 import android.app.Activity;
 import android.content.Context;

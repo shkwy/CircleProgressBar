@@ -1,11 +1,13 @@
-package com.example.sky.test;
+package com.sky.example;
 
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.View;
+
+import com.sky.library.BubbleProgressBar;
+import com.sky.example.test.R;
 
 import java.util.ArrayList;
 import java.util.List;

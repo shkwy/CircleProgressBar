@@ -1,4 +1,4 @@
-package com.example.sky.test;
+package com.sky.example;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -6,6 +6,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+
+import com.sky.example.test.R;
 
 import java.util.List;
 

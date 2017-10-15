@@ -1,4 +1,4 @@
-package com.example.sky.test;
+package com.sky.example.test;
 
 import org.junit.Test;
 
