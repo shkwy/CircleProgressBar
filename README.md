@@ -16,12 +16,12 @@ Custom circle ProgressBar
 	dependencies {
         compile 'com.github.shkwy:CircleProgressBar:1.0'
     }
-    	
+    
 2.使用
-
-    <com.sky.library.CircleProgressBar
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"/>
+   
+    <com.sky.library.CircleProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
           
 3.可以使用自定义属性设置:
     
